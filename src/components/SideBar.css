@@ -1,0 +1,35 @@
+nav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  padding: 80px 0 0 0;
+  text-align: left;
+  background: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 10px 15px;
+  font-size: 14px;
+  border-left: 4px solid #ffffff;
+}
+
+nav ul li:hover {
+  background: #E8F1FD;
+  border-left: 4px solid #1875F0;
+}
+
+nav ul li img {
+  margin-right: 10px;
+}
+
+nav p {
+  padding: 10px 15px;
+  margin: 0;
+}

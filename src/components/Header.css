@@ -8,7 +8,7 @@ header {
   align-content: center;
   justify-content: center;
   position: fixed;
-  color: #647787;
+  z-index: 100;
 }
 
 header ul {
@@ -26,13 +26,14 @@ header ul li {
 .center {
   position: absolute;
   left: 300px;
-  width: 30%;
+  width: 40%;
 }
 
 .center input {
   border: none;
   margin-left: 10px;
   color: #647787;
+  width: 90%;
 }
 
 header div {
