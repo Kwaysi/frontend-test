@@ -277,5 +277,40 @@ const tableData = [
     id: 1000002,
     time: "12:30",
     status: "unreconciled"
+  },
+  {
+    item: "Iphone 1",
+    price: 50000,
+    id: 1000002,
+    time: "12:30",
+    status: "reconciled"
+  },
+  {
+    item: "Iphone 2",
+    price: 60000,
+    id: 1000002,
+    time: "12:30",
+    status: "unreconciled"
+  },
+  {
+    item: "Iphone 3",
+    price: 70000,
+    id: 1000002,
+    time: "12:30",
+    status: "reconciled"
+  },
+  {
+    item: "Iphone 4",
+    price: 80000,
+    id: 1000002,
+    time: "12:30",
+    status: "pending"
+  },
+  {
+    item: "Iphone 5",
+    price: 90000,
+    id: 1000002,
+    time: "12:30",
+    status: "unreconciled"
   }
 ];
