@@ -4,6 +4,7 @@ import images from "../assets";
 // Css File
 import './SideBar.css';
 
+// Sidebar/Menu Component
 export default function SideBar () {
   return (
     <nav>

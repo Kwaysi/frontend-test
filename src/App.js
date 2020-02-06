@@ -8,7 +8,9 @@ import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 import images from "./assets";
 
-function App() {
+// Main app compnent
+
+export default function App() {
   return (
     <div className="App">
       <Header />
@@ -71,10 +73,19 @@ function App() {
             </div>
             <AreaChart
               data={{
-                "2017-01-01 00:00:00 -0800": 2,
-                "2017-01-01 00:01:00 -0800": 5
+                "2020-01-01": 2000,
+                "2020-01-02": 2350,
+                "2020-01-03": 3000,
+                "2020-01-04": 2450,
+                "2020-01-05": 1500,
+                "2020-01-06": 4008,
+                "2020-01-07": 6780,
+                "2020-01-08": 580,
+                "2020-01-09": 2990,
+                "2020-01-10": 9000
               }}
               colors={["rgba(2, 148, 255, .45)"]}
+              curve={false}
             />
           </div>
           <div className="quart">
@@ -134,7 +145,7 @@ function App() {
                 }}
                 defaultInputValue="20"
                 defaultValue="20"
-              />{" "}
+              />
               of {tableData.length} records
             </div>
           </div>
@@ -146,7 +157,11 @@ function App() {
             <span>Show: </span>
             <Select
               className="threethirds"
-              options={[{ label: "All", value: "All" }, { label: "Reconciled", value: "Reconciled" }, { label: "Un-reconciled", value: "Un-reconciled" }]}
+              options={[
+                { label: "All", value: "All" },
+                { label: "Reconciled", value: "Reconciled" },
+                { label: "Un-reconciled", value: "Un-reconciled" }
+              ]}
               styles={{
                 control: styles => ({
                   ...styles,
@@ -225,6 +240,8 @@ function App() {
   );
 }
 
+// Data to be rendered in table
+// Declared here due to the unavailabilty of an api
 const tableData = [
   {
     item: "Iphone 1",
@@ -262,5 +279,3 @@ const tableData = [
     status: "unreconciled"
   }
 ];
-
-export default App;
