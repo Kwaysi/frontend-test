@@ -7,17 +7,42 @@
   -o-transition: all linear 0.2s;
 }
 
+@font-face {
+  font-family: "Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Roboto Regular"),
+    url("./assets/fonts/Segoe\ UI.woff") format("woff");
+}
+
 .App {
   text-align: center;
   background-color: #f7f8fa;
   color: #647787;
   font-size: 16px;
+  text-align: left;
+  font-family: "Regular";
 }
 
 .app-main {
   width: 100%;
-  height: 100vh;
   padding: 80px 20px 20px 270px;
+}
+
+/* Text Styles */
+h1 {
+  font-size: 24px;
+  color: #262626;
+}
+
+h2 {
+  font-size: 20px;
+  color: #262626;
+}
+
+h3 {
+  font-size: 16px;
+  color: #262626;
 }
 
 /* Button Styles */
@@ -27,4 +52,119 @@
   border: none;
   background: #27AE60;
   color: #fff;
+}
+
+.reconciled-btn {
+  min-width: 150px;
+  padding: 8px;
+  border: 1px solid #27AE60;
+  color: #27AE60;
+  border-radius: 25px;
+  background: none;
+}
+
+.pending-btn {
+  min-width: 150px;
+  padding: 8px;
+  border: 1px solid #FDC203;
+  color: #FDC203;
+  border-radius: 25px;
+  background: none;
+}
+
+.unreconciled-btn {
+  min-width: 150px;
+  padding: 8px;
+  border: 1px solid #647787;
+  color: #647787;
+  border-radius: 25px;
+  background: none;
+}
+
+/* Layout */
+section {
+  width: 100%;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.quart {
+  width: 24%;
+}
+
+.third {
+  width: 33%;
+}
+
+.half {
+  width: 50%;
+}
+
+.threethirds {
+  width: 75%;
+}
+
+.full {
+  width: 100%;
+}
+
+.white-bg {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #EEF8FD;
+}
+
+/* Component Styles */
+
+.info-card {
+  display: flex;
+  min-width: 250px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background: #FDC203;
+  border-radius: 8px;
+}
+
+.progress-bar div {
+  background: #27AE60;
+  height: 100%;
+  border-radius: 8px;
+}
+
+thead {
+  background: #EAEEF0;
+}
+
+tr {
+  border-bottom: 1px solid #CCCFD4;
+}
+
+td, th {
+  padding: 10px;
+}
+
+td img {
+  margin-right: 20px;
+}
+
+.search {
+  width: 90%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #787878;
+  padding: 8px;
+}
+
+.show {
+  display: flex;
+  align-items: center;
 }

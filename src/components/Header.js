@@ -11,8 +11,8 @@ export default function Header() {
         <img src={images["logo.png"]} alt="App Logo" />
       </div>
       <div className="center">
-          <img src={images["search.svg"]} alt="Search Icon" />
-          <input placeholder="Search" />
+        <img src={images["search.svg"]} alt="Search Icon" />
+        <input placeholder="Search" />
       </div>
       <div className="right">
         <ul>
